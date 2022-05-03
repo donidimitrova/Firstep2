@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap');
+
+html,body{height:100%;}
+body{background: #eee;}
+.button{display: inline-block; background: #fff; color:#000;padding: 15px 30px; border-radius:3px; text-decoration: none; }
+
+/*-----------------------------
+header
+-----------------------------*/
+.header{background: rgba(0, 0, 0, 0.795); padding-bottom: 5px;}
+.logo{color:#fff; float:left;display: block;text-decoration: none; opacity: 0.5;}
+.Navigazione{float:right;margin:0; padding:0;}
+.tasti{display: inline-block;}
+.tasti a{color:#fff;display: block;padding:20px;text-decoration: none}
+.tasti a:hover{background: #000}
+.tasti button:hover{ background: rgb(0, 0, 0);border-color: transparent; justify-self: center;}
+.tasti button{ border-color: transparent;}
+.icona{display: block;float: right;padding:20px;display: none;}
+.icona span{display: block;height:3px; width: 30px;background: #fff; margin-bottom: 5px;}
+
+/*-----------------------------
+Cover
+-----------------------------*/
+.cover{height:70%;
+  background-image: url(../cover10.png);
+  background-size: cover;
+  background-position: center center;
+  position:relative;
+}
+.cover_filtrata{ background: rgb(0, 0, 0); width:100%; height:100%; position: absolute; z-index: 0; opacity: 0.5; }
+.cover_centrale{ display: table; height: 100%; width:100%; position: relative; z-index:1; padding: 0 20px}
+.cover_centrale_testo{ display: table-cell; vertical-align: middle; text-align: center; color:#fff; }
+.cover_centrale_testo a{text-decoration: none;font-style: normal;color: rgb(0, 0, 0); background-color: #fff; border: 2px solid rgb(95, 94, 94); }
+
+video {width: 100%    !important;height: auto   !important;}
+
+/********
+LOGO
+*********/
+
+@media (min-width: 30em) {
+.logo  {display: inline-block;height: inherit;left: 1px;line-height: inherit;margin: 0;padding: 0;position: absolute;top: 0;}}
+.ricette,.text-left h2{color:   rgba(0, 0, 0, 0.781);}
+
+/*************************************************
+Presentazione le 3 immagini
+-------------------------------------------------- */
+
+.presentazione .col-lg-4 {margin-bottom: 24px;text-align: center;}
+.presentazione h2 {font-family: 'Rancho', cursive;color:  rgb(42, 99, 173);}
+ .p{font-weight: 550; color: rgb(0, 0, 0);text-shadow: none;}
+.presentazione .col-lg-4 p {margin-right: 10px;margin-left: 10px;}
+
+/*-----------------------------
+Smartphone
+-----------------------------*/
+@media (max-width: 767px){
+
+.header{position:fixed; z-index: 100;width:100%}
+.icona{display: block; }
+.logo{float: left;}
+.Navigazione{width:100%;height:0px; overflow: hidden; }
+.tasti{display: block;}
+.is-open{height:200px; overflow: auto; z-index: 100;}
+.is-open-modal{height:250px;}
+/* Cover */
+.cover{height:100%;}
+}
+.carousel-inner .carousel-item{height: 300px;overflow: hidden;background-size:cover;background-position: center center;}
+.carousel-control-prev-icon ,
+.carousel-control-next-icon  {height: 50px;width: 50px;background-size: 100%, 100%;background-color: rgba(51, 51, 51, 0.192);}
+
+
