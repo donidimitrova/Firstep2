@@ -33,7 +33,7 @@ Cover
 }
 .cover_filtrata{ background: rgb(0, 0, 0); width:100%; height:100%; position: absolute; z-index: 0; opacity: 0.5; }
 .cover_centrale{ display: table; height: 100%; width:100%; position: relative; z-index:1; padding: 0 20px}
-.cover_centrale_testo{ display: table-cell; vertical-align: middle; text-align: justify; color:#fff; }
+.cover_centrale_testo{ display: table-cell; vertical-align: middle; text-align: left; color:#fff; }
 .cover_centrale_testo a{text-decoration: none;font-style: normal;color: rgb(0, 0, 0); background-color: #fff; border: 2px solid rgb(95, 94, 94); }
 
 video {width: 100%    !important;height: auto   !important;}
